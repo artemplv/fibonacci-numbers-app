@@ -1,14 +1,19 @@
 /*jshint esversion: 6*/
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export class Record extends React.Component {
-  render() {
-    return(
-      <tr>
-        <td>{this.props.request}</td>
-        <td>{this.props.result}</td>
-        <td>{this.props.dateAndTime}</td>
-      </tr>
-    )
-  }
+export const Record = (props) => {
+  return(
+    <tr>
+      <td>{props.request}</td>
+      <td>{props.result}</td>
+      <td>{props.dateAndTime}</td>
+    </tr>
+  )
 }
+
+Record.propTypes = {
+  request: PropTypes.number.isRequired,
+  result: PropTypes.number.isRequired,
+  dateAndTime: PropTypes.string.isRequired
+};

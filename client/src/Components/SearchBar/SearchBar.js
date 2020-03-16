@@ -1,5 +1,6 @@
 /*jshint esversion: 6*/
 import React from 'react';
+import PropTypes from 'prop-types';
 import './SearchBar.css';
 
 export class SearchBar extends React.Component {
@@ -26,4 +27,8 @@ export class SearchBar extends React.Component {
       </div>
     );
   }
+}
+
+SearchBar.propTypes = {
+  onSearch: PropTypes.func.isRequired
 }

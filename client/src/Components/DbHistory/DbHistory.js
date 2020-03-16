@@ -27,7 +27,7 @@ class DbHistory extends React.Component {
     });
   }
 
-  //render rows of request history
+  // render rows of request history
   renderRows() {
     return this.state.results.map( row => {
       return <Record key={row.id} request={row.request} result={row.result}

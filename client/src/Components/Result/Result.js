@@ -1,15 +1,17 @@
 /*jshint esversion: 6*/
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Result.css';
 
-export class Result extends React.Component {
-
-  render() {
-    return(
-      <div className="Result">
-        <p>Your Fibonacci number is</p>
-        <h2>{this.props.result}</h2>
-      </div>
-    )
-  }
+export const Result = (props) => {
+  return(
+    <div className="Result">
+      <p>Your Fibonacci number is</p>
+      <h2>{props.result}</h2>
+    </div>
+  )
 }
+
+Result.propTypes = {
+  result: PropTypes.number.isRequired
+};
