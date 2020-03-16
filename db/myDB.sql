@@ -1,0 +1,8 @@
+CREATE TABLE `fib` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `ip` text NOT NULL,
+  `request` int(11) NOT NULL,
+  `result` bigint NOT NULL,
+  `dateAndTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
