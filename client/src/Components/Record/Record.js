@@ -7,7 +7,7 @@ export const Record = (props) => {
     <tr>
       <td>{props.request}</td>
       <td>{props.result}</td>
-      <td>{props.dateAndTime}</td>
+      <td>{props.createdAt}</td>
     </tr>
   )
 }
@@ -15,5 +15,5 @@ export const Record = (props) => {
 Record.propTypes = {
   request: PropTypes.number.isRequired,
   result: PropTypes.number.isRequired,
-  dateAndTime: PropTypes.string.isRequired
+  createdAt: PropTypes.string.isRequired
 };

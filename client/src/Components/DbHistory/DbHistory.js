@@ -31,7 +31,7 @@ class DbHistory extends React.Component {
   renderRows() {
     return this.state.results.map( row => {
       return <Record key={row.id} request={row.request} result={row.result}
-        dateAndTime={row.dateAndTime} />
+        createdAt={row.createdAt} />
     })
   }
 
